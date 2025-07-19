@@ -4,3 +4,7 @@ Notebooks/*.csv
 
 # big local datasets
 Notebooks/*.csv
+
+# Quarto output
+_book/
+_site/
