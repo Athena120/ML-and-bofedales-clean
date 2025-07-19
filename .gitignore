@@ -1,10 +1,12 @@
-
 # big local datasets
 Notebooks/*.csv
 
-# big local datasets
-Notebooks/*.csv
+# allow Quarto freeze cache to be tracked
+!_freeze/
+!_freeze/**
 
 # Quarto output
 _book/
 _site/
+
+/.quarto/
