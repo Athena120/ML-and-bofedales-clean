@@ -1,0 +1,7 @@
+# Introduction
+
+## What are bofedales?
+Bofedales are unique high-Andean wetland ecosystems characterized by peat formation. Located over 3,000m above sea level, they originate due to permanent water flows that foster the development of cushion plants. Cushion-forming Juncaceae are "nurse plants" for plants consumed by wild and domesticated camelids. Bofedales are essential for water management, have high cultural value for indigenous communities (especially herders and farmers), and play a key role in the global climate systems. They can be found in Peru, Bolivia, and northern Chile, the region focused on by this study. 
+
+## What's a k-means clustering algorithm?
+K-means clustering is a type of unsupervised machine learning model. If all of the n features of the dataset were graphed in a n-dimensional space, k-means attempts to create a set of centers and minimize the sum of squared distances between any point and its center. Since this problem is NP-hard, k-means is a heuristic algorithm that converges as a local optimum. 

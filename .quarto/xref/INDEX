@@ -1,0 +1,35 @@
+{
+  "index.qmd": {
+    "index.html": "2f60e5cc"
+  },
+  "intro.qmd": {
+    "intro.html": "703d389f"
+  },
+  "summary.qmd": {
+    "summary.html": "ac661d87"
+  },
+  "references.qmd": {
+    "references.html": "7a164553"
+  },
+  "visualizations.ipynb": {
+    "visualizations.html": "07e39b50"
+  },
+  "research-qs.qmd": {
+    "research-qs.html": "ba05d494"
+  },
+  "datasets.qmd": {
+    "datasets.html": "bcf58d87"
+  },
+  "Notebooks/k7.ipynb": {
+    "k7.html": "755feb2a"
+  },
+  "Notebooks/k2.ipynb": {
+    "k2.html": "6cdb41cd"
+  },
+  "Notebooks/k3.ipynb": {
+    "k3.html": "89a3cec2"
+  },
+  "Notebooks/PCA.ipynb": {
+    "PCA.html": "d8af0670"
+  }
+}

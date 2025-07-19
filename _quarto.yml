@@ -1,0 +1,27 @@
+project:
+  type: book
+execute:
+  python: "/Users/estellanewton/.local/pipx/venvs/notebook/bin/python"
+  enabled: true
+  freeze: auto
+ 
+book:
+  title: "K-Means Clustering & Bofedales"
+  author: "Estella Newton"
+  date: "2025-07-10"
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - research-qs.qmd
+    - datasets.qmd
+
+    - part: "Running K-Means"
+      chapters:
+        - Notebooks/PCA.ipynb
+        - Notebooks/k7.ipynb
+        - Notebooks/k2.ipynb
+        - Notebooks/k3.ipynb
+
+    # - summary.qmd
+    - references.qmd

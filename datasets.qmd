@@ -1,0 +1,61 @@
+# Datasets & Variables
+
+## The CAMELS-CL dataset
+
+- Minimum Temperature
+- Maximum Temperature
+- Precipitation
+- Ground Water Rights
+- Surface Water Rights
+- PET
+
+These datasets have temporal data, beginning around 1980 and ending around 2020 (depending on the dataset)
+
+Link to the CAMELS-CL dataset: [https://doi.pangaea.de/10.1594/PANGAEA.894885](URL)
+
+*Note: The CAMELS-CL dataset does include streamflow data, but due to large amounts of missing data, it was not incorporated into the model*
+
+## Extracted from Sentinel-2 Satellite Imagery from GEE
+
+- NDVI
+- NDWI
+
+Link to the Sentinel-2 dataset: [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2](URL)
+
+These datasets have temporal data from 2019 to 2024
+
+## OpenTopography's API service
+
+- Elevation
+- Elevation standard deviation
+
+Link to OpenTopography's website: [https://opentopography.org/](URL)
+
+## DGA datasets
+
+- Number of reservoirs
+
+Link to download: [https://dga.mop.gob.cl/uploads/sites/13/2024/07/Embalses-1.zip](URL)
+
+## Development of Groundwater Levels Dataset for Chile since 1970 publication in Nature
+
+- Number of boreholes/wells
+
+Link to the publication: [https://www.nature.com/articles/s41597-023-02895-5](URL)
+
+## MapBiomas
+
+- Protected/park land data (m^2 and percentage of whole)
+
+Link to MapBiomas: [https://chile.mapbiomas.org/en/mapas-de-la-coleccion/](URL)
+
+
+## Variables not included
+
+Several variables that are important for consideration when examining factors that determine overall health of a bofedal but do not have readily avalible datasets include:
+
+- Bofedal management strategies
+- Population dynamics in herding communities
+- Carrying capacity of ganandos by species
+
+Socioeconomic variables such as these are addressed later in the study through case studies and field work.

@@ -1,0 +1,22 @@
+# Research Questions & Objectives
+
+## Research Question
+
+### Main Question
+What can a machine learning algorithm reveal about the impact of various factors on the health of bofedales in Chile?
+
+### Sub-Questions
+1. What models are effective for analyzing the impact of various factors on the health of bofedales in Chile?
+2. What factors prove most influential to the health of bofedales in Chile based on available data?
+3. What can the clusters produced by the model reveal about Chilean bofedal health?
+
+
+## Research Objectives
+
+### Main Objective
+Build and train several different machine learning algorithms on various factors that may affect Chilean bofedal health.
+
+### Sub-Objectives
+1. Determine which types of ML algorithms best reveal impacts to bofedal health. 
+2. Interpret the weights given to each variable by the ML model.
+3. Analyze clusters to determine the meaning of each cluster and its typical attributes.
