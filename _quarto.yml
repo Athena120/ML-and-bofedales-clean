@@ -1,9 +1,9 @@
 project:
   type: book
 execute:
-  python: "/Users/estellanewton/.local/pipx/venvs/notebook/bin/python"
-  enabled: true
-  freeze: auto
+#  python: "/Users/estellanewton/.local/pipx/venvs/notebook/bin/python"
+  enabled: false
+#  freeze: auto
  
 book:
   title: "K-Means Clustering & Bofedales"
