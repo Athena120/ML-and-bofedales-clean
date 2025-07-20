@@ -10,3 +10,5 @@ _book/
 _site/
 
 /.quarto/
+!.quarto/_freeze/
+!.quarto/_freeze/**
