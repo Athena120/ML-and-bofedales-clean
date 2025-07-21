@@ -12,7 +12,7 @@ book:
 
   chapters:
     - index.qmd
-    - intro.qmd
+    # - intro.qmd
     - research-qs.qmd
     - datasets.qmd
 
@@ -24,4 +24,4 @@ book:
         - Notebooks/k3.ipynb
 
     # - summary.qmd
-    - references.qmd
+    #- references.qmd
