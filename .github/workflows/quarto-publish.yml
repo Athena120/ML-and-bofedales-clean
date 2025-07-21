@@ -27,7 +27,16 @@ jobs:
           pip install jupyter nbformat ipykernel
           # scientific stack your notebooks use
           pip install numpy pandas matplotlib scikit-learn seaborn plotly geopandas contextily folium ipywidgets shapely
-
+      # .github/workflows/quarto-publish.yml  (just before the Render & Publish step)
+      - name: Drop .nojekyll into output dir
+        run: echo > .nojekyll
+        
+      - name: Render & Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # 4  Render the book and push to gh-pages
       - name: Render & Publish
         uses: quarto-dev/quarto-actions/publish@v2
