@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Running k=2 – K-Means Clustering &amp; Bofedales</title>
+<title>5&nbsp; Running k=2 – K-Means Clustering &amp; Bofedales</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -120,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Notebooks/PCA.html">Running K-Means</a></li><li class="breadcrumb-item"><a href="../Notebooks/k2.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running k=2</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Notebooks/PCA.html">Running K-Means</a></li><li class="breadcrumb-item"><a href="../Notebooks/k2.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=2</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -148,25 +148,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../research-qs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../datasets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -181,35 +175,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Notebooks/PCA.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Notebooks/k7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=7</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Running k=7</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Notebooks/k2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running k=2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Notebooks/k3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Running Without Temporal Data (k=3)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running Without Temporal Data (k=3)</span></span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -220,22 +208,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#loading-the-data-and-importing-packages" id="toc-loading-the-data-and-importing-packages" class="nav-link active" data-scroll-target="#loading-the-data-and-importing-packages"><span class="header-section-number">6.1</span> Loading the data and importing packages</a></li>
-  <li><a href="#running-k2" id="toc-running-k2" class="nav-link" data-scroll-target="#running-k2"><span class="header-section-number">6.2</span> Running k=2</a>
+  <li><a href="#loading-the-data-and-importing-packages" id="toc-loading-the-data-and-importing-packages" class="nav-link active" data-scroll-target="#loading-the-data-and-importing-packages"><span class="header-section-number">5.1</span> Loading the data and importing packages</a></li>
+  <li><a href="#running-k2" id="toc-running-k2" class="nav-link" data-scroll-target="#running-k2"><span class="header-section-number">5.2</span> Running k=2</a>
   <ul class="collapse">
-  <li><a href="#measuring-fit" id="toc-measuring-fit" class="nav-link" data-scroll-target="#measuring-fit"><span class="header-section-number">6.2.1</span> Measuring fit</a></li>
+  <li><a href="#measuring-fit" id="toc-measuring-fit" class="nav-link" data-scroll-target="#measuring-fit"><span class="header-section-number">5.2.1</span> Measuring fit</a></li>
   </ul></li>
-  <li><a href="#data-visualizations" id="toc-data-visualizations" class="nav-link" data-scroll-target="#data-visualizations"><span class="header-section-number">6.3</span> Data Visualizations</a></li>
-  <li><a href="#feature-importance" id="toc-feature-importance" class="nav-link" data-scroll-target="#feature-importance"><span class="header-section-number">6.4</span> Feature Importance</a></li>
+  <li><a href="#data-visualizations" id="toc-data-visualizations" class="nav-link" data-scroll-target="#data-visualizations"><span class="header-section-number">5.3</span> Data Visualizations</a></li>
+  <li><a href="#feature-importance" id="toc-feature-importance" class="nav-link" data-scroll-target="#feature-importance"><span class="header-section-number">5.4</span> Feature Importance</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Notebooks/PCA.html">Running K-Means</a></li><li class="breadcrumb-item"><a href="../Notebooks/k2.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running k=2</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Notebooks/PCA.html">Running K-Means</a></li><li class="breadcrumb-item"><a href="../Notebooks/k2.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=2</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running k=2</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=2</span></h1>
 </div>
 
 
@@ -252,8 +240,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="loading-the-data-and-importing-packages" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="loading-the-data-and-importing-packages"><span class="header-section-number">6.1</span> Loading the data and importing packages</h2>
+<section id="loading-the-data-and-importing-packages" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="loading-the-data-and-importing-packages"><span class="header-section-number">5.1</span> Loading the data and importing packages</h2>
 <div id="d916148b-89ed-4fd6-9e23-611643cb2b57" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
@@ -342,8 +330,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="running-k2" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="running-k2"><span class="header-section-number">6.2</span> Running k=2</h2>
+<section id="running-k2" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="running-k2"><span class="header-section-number">5.2</span> Running k=2</h2>
 <div id="9b5d480f-e9ea-4c97-bd72-2188d3e06e03" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>K<span class="op">=</span><span class="dv">2</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span>K, random_state<span class="op">=</span><span class="dv">42</span>, n_init<span class="op">=</span><span class="dv">20</span>)</span>
@@ -353,8 +341,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="7a031100-bcd1-48b5-b1eb-fa15a56ee851" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cluster"</span>] <span class="op">=</span> cluster_labels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="measuring-fit" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="measuring-fit"><span class="header-section-number">6.2.1</span> Measuring fit</h3>
+<section id="measuring-fit" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="measuring-fit"><span class="header-section-number">5.2.1</span> Measuring fit</h3>
 <div id="f219f3a7-3fa1-49a5-8d69-f4e5c46fc1a7" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>inertia <span class="op">=</span> kmeans.inertia_</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -387,8 +375,8 @@ Global mean: 2159.831865394074</code></pre>
 </div>
 </section>
 </section>
-<section id="data-visualizations" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="data-visualizations"><span class="header-section-number">6.3</span> Data Visualizations</h2>
+<section id="data-visualizations" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="data-visualizations"><span class="header-section-number">5.3</span> Data Visualizations</h2>
 <div id="7a435fb3-a816-4810-9877-14d2b0b275ee" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>pd.Series(df[<span class="st">"cluster"</span>]).value_counts().sort_index().plot.bar(color<span class="op">=</span><span class="st">'skyblue'</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Cluster"</span>)<span class="op">;</span> plt.ylabel(<span class="st">"Count"</span>)</span>
@@ -473,8 +461,8 @@ Global mean: 2159.831865394074</code></pre>
 </div>
 </div>
 </section>
-<section id="feature-importance" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="feature-importance"><span class="header-section-number">6.4</span> Feature Importance</h2>
+<section id="feature-importance" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="feature-importance"><span class="header-section-number">5.4</span> Feature Importance</h2>
 <div id="a7f89c43-22ae-4b28-9235-d97379122239" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>X_num <span class="op">=</span> (</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    df </span>
@@ -1042,12 +1030,12 @@ Name: PC1, dtype: float64</code></pre>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../Notebooks/k7.html" class="pagination-link" aria-label="Running k=7">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=7</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Running k=7</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../Notebooks/k3.html" class="pagination-link" aria-label="Running Without Temporal Data (k=3)">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Running Without Temporal Data (k=3)</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running Without Temporal Data (k=3)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

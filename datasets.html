@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Datasets &amp; Variables – K-Means Clustering &amp; Bofedales</title>
+<title>2&nbsp; Datasets &amp; Variables – K-Means Clustering &amp; Bofedales</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./datasets.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./datasets.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -110,25 +110,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./research-qs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./datasets.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -143,35 +137,29 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Notebooks/PCA.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Notebooks/k7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=7</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Running k=7</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Notebooks/k2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running k=2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Notebooks/k3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Running Without Temporal Data (k=3)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running Without Temporal Data (k=3)</span></span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -182,13 +170,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-camels-cl-dataset" id="toc-the-camels-cl-dataset" class="nav-link active" data-scroll-target="#the-camels-cl-dataset"><span class="header-section-number">3.1</span> The CAMELS-CL dataset</a></li>
-  <li><a href="#extracted-from-sentinel-2-satellite-imagery-from-gee" id="toc-extracted-from-sentinel-2-satellite-imagery-from-gee" class="nav-link" data-scroll-target="#extracted-from-sentinel-2-satellite-imagery-from-gee"><span class="header-section-number">3.2</span> Extracted from Sentinel-2 Satellite Imagery from GEE</a></li>
-  <li><a href="#opentopographys-api-service" id="toc-opentopographys-api-service" class="nav-link" data-scroll-target="#opentopographys-api-service"><span class="header-section-number">3.3</span> OpenTopography’s API service</a></li>
-  <li><a href="#dga-datasets" id="toc-dga-datasets" class="nav-link" data-scroll-target="#dga-datasets"><span class="header-section-number">3.4</span> DGA datasets</a></li>
-  <li><a href="#development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature" id="toc-development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature" class="nav-link" data-scroll-target="#development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature"><span class="header-section-number">3.5</span> Development of Groundwater Levels Dataset for Chile since 1970 publication in Nature</a></li>
-  <li><a href="#mapbiomas" id="toc-mapbiomas" class="nav-link" data-scroll-target="#mapbiomas"><span class="header-section-number">3.6</span> MapBiomas</a></li>
-  <li><a href="#variables-not-included" id="toc-variables-not-included" class="nav-link" data-scroll-target="#variables-not-included"><span class="header-section-number">3.7</span> Variables not included</a></li>
+  <li><a href="#the-camels-cl-dataset" id="toc-the-camels-cl-dataset" class="nav-link active" data-scroll-target="#the-camels-cl-dataset"><span class="header-section-number">2.1</span> The CAMELS-CL dataset</a></li>
+  <li><a href="#extracted-from-sentinel-2-satellite-imagery-from-gee" id="toc-extracted-from-sentinel-2-satellite-imagery-from-gee" class="nav-link" data-scroll-target="#extracted-from-sentinel-2-satellite-imagery-from-gee"><span class="header-section-number">2.2</span> Extracted from Sentinel-2 Satellite Imagery from GEE</a></li>
+  <li><a href="#opentopographys-api-service" id="toc-opentopographys-api-service" class="nav-link" data-scroll-target="#opentopographys-api-service"><span class="header-section-number">2.3</span> OpenTopography’s API service</a></li>
+  <li><a href="#dga-datasets" id="toc-dga-datasets" class="nav-link" data-scroll-target="#dga-datasets"><span class="header-section-number">2.4</span> DGA datasets</a></li>
+  <li><a href="#development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature" id="toc-development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature" class="nav-link" data-scroll-target="#development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature"><span class="header-section-number">2.5</span> Development of Groundwater Levels Dataset for Chile since 1970 publication in Nature</a></li>
+  <li><a href="#mapbiomas" id="toc-mapbiomas" class="nav-link" data-scroll-target="#mapbiomas"><span class="header-section-number">2.6</span> MapBiomas</a></li>
+  <li><a href="#variables-not-included" id="toc-variables-not-included" class="nav-link" data-scroll-target="#variables-not-included"><span class="header-section-number">2.7</span> Variables not included</a></li>
   </ul>
 </nav>
     </div>
@@ -197,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></h1>
 </div>
 
 
@@ -214,8 +202,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-camels-cl-dataset" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="the-camels-cl-dataset"><span class="header-section-number">3.1</span> The CAMELS-CL dataset</h2>
+<section id="the-camels-cl-dataset" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="the-camels-cl-dataset"><span class="header-section-number">2.1</span> The CAMELS-CL dataset</h2>
 <ul>
 <li>Minimum Temperature</li>
 <li>Maximum Temperature</li>
@@ -228,8 +216,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Link to the CAMELS-CL dataset: <a href="URL">https://doi.pangaea.de/10.1594/PANGAEA.894885</a></p>
 <p><em>Note: The CAMELS-CL dataset does include streamflow data, but due to large amounts of missing data, it was not incorporated into the model</em></p>
 </section>
-<section id="extracted-from-sentinel-2-satellite-imagery-from-gee" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="extracted-from-sentinel-2-satellite-imagery-from-gee"><span class="header-section-number">3.2</span> Extracted from Sentinel-2 Satellite Imagery from GEE</h2>
+<section id="extracted-from-sentinel-2-satellite-imagery-from-gee" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="extracted-from-sentinel-2-satellite-imagery-from-gee"><span class="header-section-number">2.2</span> Extracted from Sentinel-2 Satellite Imagery from GEE</h2>
 <ul>
 <li>NDVI</li>
 <li>NDWI</li>
@@ -237,37 +225,37 @@ ul.task-list li input[type="checkbox"] {
 <p>Link to the Sentinel-2 dataset: <a href="URL">https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2</a></p>
 <p>These datasets have temporal data from 2019 to 2024</p>
 </section>
-<section id="opentopographys-api-service" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="opentopographys-api-service"><span class="header-section-number">3.3</span> OpenTopography’s API service</h2>
+<section id="opentopographys-api-service" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="opentopographys-api-service"><span class="header-section-number">2.3</span> OpenTopography’s API service</h2>
 <ul>
 <li>Elevation</li>
 <li>Elevation standard deviation</li>
 </ul>
 <p>Link to OpenTopography’s website: <a href="URL">https://opentopography.org/</a></p>
 </section>
-<section id="dga-datasets" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="dga-datasets"><span class="header-section-number">3.4</span> DGA datasets</h2>
+<section id="dga-datasets" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="dga-datasets"><span class="header-section-number">2.4</span> DGA datasets</h2>
 <ul>
 <li>Number of reservoirs</li>
 </ul>
 <p>Link to download: <a href="URL">https://dga.mop.gob.cl/uploads/sites/13/2024/07/Embalses-1.zip</a></p>
 </section>
-<section id="development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature"><span class="header-section-number">3.5</span> Development of Groundwater Levels Dataset for Chile since 1970 publication in Nature</h2>
+<section id="development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature"><span class="header-section-number">2.5</span> Development of Groundwater Levels Dataset for Chile since 1970 publication in Nature</h2>
 <ul>
 <li>Number of boreholes/wells</li>
 </ul>
 <p>Link to the publication: <a href="URL">https://www.nature.com/articles/s41597-023-02895-5</a></p>
 </section>
-<section id="mapbiomas" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="mapbiomas"><span class="header-section-number">3.6</span> MapBiomas</h2>
+<section id="mapbiomas" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="mapbiomas"><span class="header-section-number">2.6</span> MapBiomas</h2>
 <ul>
 <li>Protected/park land data (m^2 and percentage of whole)</li>
 </ul>
 <p>Link to MapBiomas: <a href="URL">https://chile.mapbiomas.org/en/mapas-de-la-coleccion/</a></p>
 </section>
-<section id="variables-not-included" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="variables-not-included"><span class="header-section-number">3.7</span> Variables not included</h2>
+<section id="variables-not-included" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="variables-not-included"><span class="header-section-number">2.7</span> Variables not included</h2>
 <p>Several variables that are important for consideration when examining factors that determine overall health of a bofedal but do not have readily avalible datasets include:</p>
 <ul>
 <li>Bofedal management strategies</li>
@@ -682,12 +670,12 @@ ul.task-list li input[type="checkbox"] {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./research-qs.html" class="pagination-link" aria-label="Research Questions &amp; Objectives">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Notebooks/PCA.html" class="pagination-link" aria-label="Principle Component Analysis">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

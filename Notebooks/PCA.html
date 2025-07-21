@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Principle Component Analysis – K-Means Clustering &amp; Bofedales</title>
+<title>3&nbsp; Principle Component Analysis – K-Means Clustering &amp; Bofedales</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -120,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Notebooks/PCA.html">Running K-Means</a></li><li class="breadcrumb-item"><a href="../Notebooks/PCA.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Notebooks/PCA.html">Running K-Means</a></li><li class="breadcrumb-item"><a href="../Notebooks/PCA.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -148,25 +148,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../research-qs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../datasets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -181,35 +175,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Notebooks/PCA.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Notebooks/k7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=7</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Running k=7</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Notebooks/k2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running k=2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Notebooks/k3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Running Without Temporal Data (k=3)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Running Without Temporal Data (k=3)</span></span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -220,18 +208,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#import-statements" id="toc-import-statements" class="nav-link active" data-scroll-target="#import-statements"><span class="header-section-number">4.1</span> Import Statements</a></li>
-  <li><a href="#finding-the-optimal-number-of-principle-components" id="toc-finding-the-optimal-number-of-principle-components" class="nav-link" data-scroll-target="#finding-the-optimal-number-of-principle-components"><span class="header-section-number">4.2</span> Finding the Optimal Number of Principle Components</a></li>
-  <li><a href="#run-pca-with-6-components" id="toc-run-pca-with-6-components" class="nav-link" data-scroll-target="#run-pca-with-6-components"><span class="header-section-number">4.3</span> Run PCA with 6 Components</a></li>
+  <li><a href="#import-statements" id="toc-import-statements" class="nav-link active" data-scroll-target="#import-statements"><span class="header-section-number">3.1</span> Import Statements</a></li>
+  <li><a href="#finding-the-optimal-number-of-principle-components" id="toc-finding-the-optimal-number-of-principle-components" class="nav-link" data-scroll-target="#finding-the-optimal-number-of-principle-components"><span class="header-section-number">3.2</span> Finding the Optimal Number of Principle Components</a></li>
+  <li><a href="#run-pca-with-6-components" id="toc-run-pca-with-6-components" class="nav-link" data-scroll-target="#run-pca-with-6-components"><span class="header-section-number">3.3</span> Run PCA with 6 Components</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Notebooks/PCA.html">Running K-Means</a></li><li class="breadcrumb-item"><a href="../Notebooks/PCA.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Notebooks/PCA.html">Running K-Means</a></li><li class="breadcrumb-item"><a href="../Notebooks/PCA.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Principle Component Analysis</span></h1>
 </div>
 
 
@@ -249,8 +237,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Since the merge between the datasets created a lot of columns (over 2,000), it’s necesary to reduce the dimensions of the dataset with PCA before running the k-means algorithm.</p>
-<section id="import-statements" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="import-statements"><span class="header-section-number">4.1</span> Import Statements</h2>
+<section id="import-statements" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="import-statements"><span class="header-section-number">3.1</span> Import Statements</h2>
 <div id="52ac4cb3-1898-4cc4-8d67-bd05321a424b" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
@@ -386,8 +374,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="finding-the-optimal-number-of-principle-components" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="finding-the-optimal-number-of-principle-components"><span class="header-section-number">4.2</span> Finding the Optimal Number of Principle Components</h2>
+<section id="finding-the-optimal-number-of-principle-components" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="finding-the-optimal-number-of-principle-components"><span class="header-section-number">3.2</span> Finding the Optimal Number of Principle Components</h2>
 <p>First, check how many principle components account for 90% of the variance in the data</p>
 <div id="0ddb4d30-c02a-4a87-bd82-a1ea0786fc10" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()</span>
@@ -444,8 +432,8 @@ Cumulative explained variance: 0.9289</code></pre>
 </div>
 <p>Since the “elbow” of the curve occurs at around 7 or 6 PCs, this is the value that will be used in analyzing the data</p>
 </section>
-<section id="run-pca-with-6-components" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="run-pca-with-6-components"><span class="header-section-number">4.3</span> Run PCA with 6 Components</h2>
+<section id="run-pca-with-6-components" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="run-pca-with-6-components"><span class="header-section-number">3.3</span> Run PCA with 6 Components</h2>
 <div id="f37937e8-6ed1-43de-b963-e59bf2327f9a" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>pca6 <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">6</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>X_ <span class="op">=</span> pca6.fit_transform(X_scaled)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -861,12 +849,12 @@ Cumulative explained variance: 0.9289</code></pre>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../datasets.html" class="pagination-link" aria-label="Datasets &amp; Variables">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../Notebooks/k7.html" class="pagination-link" aria-label="Running k=7">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Running k=7</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Running k=7</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
