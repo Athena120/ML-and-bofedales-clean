@@ -27,18 +27,13 @@ jobs:
           pip install jupyter nbformat ipykernel
           # scientific stack your notebooks use
           pip install numpy pandas matplotlib scikit-learn seaborn plotly geopandas contextily folium ipywidgets shapely
-#     # .github/workflows/quarto-publish.yml  (just before the Render & Publish step)
-#     - name: Drop .nojekyll into output dir
-#       run: echo > .nojekyll
-        
-      - name: Add .nojekyll to rendered output
-        # Quarto’s default output folder is _site/ .
-        # If you changed `output-dir:` in _quarto.yml, use that path instead.
-        run: echo > _site/.nojekyll
-      # 4  Render the book and push to gh-pages
+      # 4 ── Render the book **and** copy .nojekyll into _site/, then push
       - name: Render & Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          postprocess: |
+            # Quarto has finished rendering into _site/ at this point
+            cp .nojekyll _site/.nojekyll
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
