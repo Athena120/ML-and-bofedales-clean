@@ -24,7 +24,7 @@
     "href": "index.html#what-is-a-k-means-clustering-algorithm",
     "title": "K-Means Clustering & Bofedales",
     "section": "What is a k-means clustering algorithm?",
-    "text": "What is a k-means clustering algorithm?\nK-means clustering is a type of unsupervised machine learning model. If all of the n features of the dataset were graphed in a n-dimensional space, k-means attempts to create a set of centers and minimize the sum of squared distances between any point and its center. Since this problem is NP-hard, k-means is a heuristic algorithm that converges as a local optimum.",
+    "text": "What is a k-means clustering algorithm?\nK-means clustering is a type of unsupervised machine learning model. If all of the n features of the dataset were graphed in a n-dimensional space, k-means attempts to create a set of centers and minimize the sum of squared distances between any point and its center. Since this problem is NP-hard, k-means is a heuristic algorithm that converges as a local optimum.\n\nThis project is part of the Núcleo Milenio Andespeat, a research center funded by ANID and based at the Universidad de Tarapacá in Arica, Chile. It was developed by Estella Newton and advised by Manuel Prieto, Charlie Hoffs, and Francisco Mayol.",
     "crumbs": [
       "Introduction"
     ]
