@@ -8,7 +8,6 @@ execute:
 format:
   html:
     self-contained: true
-  pdf: default
 book:
   title: "K-Means Clustering & Bofedales"
   author: "Estella Newton"
