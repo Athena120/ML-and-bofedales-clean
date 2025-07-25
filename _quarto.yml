@@ -3,8 +3,12 @@ project:
 execute:
 #  python: "/Users/estellanewton/.local/pipx/venvs/notebook/bin/python"
   enabled: false
+  freeze: false
 #  freeze: auto
- 
+format:
+  html:
+    self-contained: true
+  pdf: default
 book:
   title: "K-Means Clustering & Bofedales"
   author: "Estella Newton"
@@ -25,3 +29,4 @@ book:
 
     # - summary.qmd
     #- references.qmd
+    
