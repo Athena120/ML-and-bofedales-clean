@@ -142,34 +142,34 @@
   {
     "objectID": "Notebooks/PCA.html",
     "href": "Notebooks/PCA.html",
-    "title": "3  Principle Component Analysis",
+    "title": "3  Principal Component Analysis",
     "section": "",
     "text": "3.1 Import Statements\nSince the merge between the datasets created a lot of columns (over 2,000), it’s necesary to reduce the dimensions of the dataset with PCA before running the k-means algorithm.\nfrom sklearn.decomposition import PCA\nfrom sklearn.preprocessing import StandardScaler\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\ndf = pd.read_csv(\"bofedales-clean.csv\")\ndf = df.drop([\"Unnamed: 0\"], axis=1)\ndf.isna().sum().sum()\n\nnp.int64(0)\ndf.shape\n\n(2534, 2292)\ndf.head(3)\n\n\n\n\n\n\n\n\nArea_m2\nAUC\npct_prot\nelev_mean_\nelev_std_m\nn_wells\n1983_explr\n1983_explt\n1932_explt\nGround Water Rights 1966-01-01\n...\nNDWI 2019-03\nNDWI 2019-04\nNDWI 2019-05\nNDWI 2019-06\nNDWI 2019-07\nNDWI 2019-08\nNDWI 2019-09\nNDWI 2019-10\nNDWI 2019-11\nNDWI 2019-12\n\n\n\n\n0\n6300\n86.769539\n0.0\n4162.714286\n3.953815\n0\n19\n0\n0\n0.0\n...\n0.031930\n0.026136\n0.022087\n0.019181\n0.023405\n0.015355\n-0.000504\n0.004056\n0.014678\n0.010436\n\n\n1\n5400\n83.176353\n0.0\n4073.500000\n12.406316\n0\n19\n0\n0\n0.0\n...\n-0.057992\n-0.053230\n-0.054671\n-0.064990\n-0.063351\n-0.074670\n-0.085071\n-0.081491\n-0.061333\n-0.055450\n\n\n2\n6300\n103.719438\n0.0\n4278.571429\n6.161102\n0\n19\n0\n0\n0.0\n...\n0.065899\n0.070822\n0.070075\n0.068015\n0.068144\n0.062340\n0.047670\n0.050570\n0.056227\n0.059294\n\n\n\n\n3 rows × 2292 columns",
     "crumbs": [
       "Running K-Means",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Principle Component Analysis</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Principal Component Analysis</span>"
     ]
   },
   {
-    "objectID": "Notebooks/PCA.html#finding-the-optimal-number-of-principle-components",
-    "href": "Notebooks/PCA.html#finding-the-optimal-number-of-principle-components",
-    "title": "3  Principle Component Analysis",
-    "section": "3.2 Finding the Optimal Number of Principle Components",
-    "text": "3.2 Finding the Optimal Number of Principle Components\nFirst, check how many principle components account for 90% of the variance in the data\n\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(df)  \n\n\nx_per_variance = 0.90\n\npca = PCA(n_components=x_per_variance, svd_solver=\"full\")\nX_pca = pca.fit_transform(X_scaled)\nprint(f\"Number of principal components chosen to explain {x_per_variance * 100}% variance: {pca.n_components_}\")\nprint(\"Explained variance ratio (per PC):\")\nprint(np.round(pca.explained_variance_ratio_, 4))\nprint(\"Cumulative explained variance:\", round(pca.explained_variance_ratio_.cumsum()[-1], 4))\n\nNumber of principal components chosen to explain 90.0% variance: 5\nExplained variance ratio (per PC):\n[0.7058 0.093  0.0571 0.0397 0.0334]\nCumulative explained variance: 0.9289\n\n\nFive PCs account for 90% of the variance, so the data can easily be greatly reduced in dimensionality.\nNext, graph variance versus PCs. The elbow in the graph has the optional number of PCs – afterwards, there are diminishing returns.\n\nfeatures_for_pca = df.columns.tolist()\n\npca_full = PCA()\npca_full.fit(X_scaled)\n\ncum_var = np.cumsum(pca_full.explained_variance_ratio_)\n\n# 6) Plot the \"elbow\" (cumulative explained variance vs. number of components)\nplt.figure(figsize=(8, 5))\nplt.plot(range(1, len(cum_var) + 1), cum_var, marker='o', linewidth=2)\nplt.axhline(y=0.90, color='r', linestyle='--', label='90% Threshold')\nplt.axhline(y=0.99, color='g', linestyle='--', label='99% Threshold')\nplt.xlabel(\"Number of Principal Components\")\nplt.ylabel(\"Cumulative Explained Variance\")\nplt.title(\"Elbow Plot: Cumulative Explained Variance by Number of PCs\")\nplt.legend()\nplt.grid(True)\nplt.tight_layout()\n\nplt.xlim(1, 50)\n\nplt.show()\n\n\n\n\n\n\n\n\nSince the “elbow” of the curve occurs at around 7 or 6 PCs, this is the value that will be used in analyzing the data",
+    "objectID": "Notebooks/PCA.html#finding-the-optimal-number-of-principal-components",
+    "href": "Notebooks/PCA.html#finding-the-optimal-number-of-principal-components",
+    "title": "3  Principal Component Analysis",
+    "section": "3.2 Finding the Optimal Number of Principal Components",
+    "text": "3.2 Finding the Optimal Number of Principal Components\nFirst, check how many principal components account for 90% of the variance in the data\n\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(df)  \n\n\nx_per_variance = 0.90\n\npca = PCA(n_components=x_per_variance, svd_solver=\"full\")\nX_pca = pca.fit_transform(X_scaled)\nprint(f\"Number of principal components chosen to explain {x_per_variance * 100}% variance: {pca.n_components_}\")\nprint(\"Explained variance ratio (per PC):\")\nprint(np.round(pca.explained_variance_ratio_, 4))\nprint(\"Cumulative explained variance:\", round(pca.explained_variance_ratio_.cumsum()[-1], 4))\n\nNumber of principal components chosen to explain 90.0% variance: 5\nExplained variance ratio (per PC):\n[0.7058 0.093  0.0571 0.0397 0.0334]\nCumulative explained variance: 0.9289\n\n\nFive PCs account for 90% of the variance, so the data can easily be greatly reduced in dimensionality.\nNext, graph variance versus PCs. The elbow in the graph has the optional number of PCs – afterwards, there are diminishing returns.\n\nfeatures_for_pca = df.columns.tolist()\n\npca_full = PCA()\npca_full.fit(X_scaled)\n\ncum_var = np.cumsum(pca_full.explained_variance_ratio_)\n\n# 6) Plot the \"elbow\" (cumulative explained variance vs. number of components)\nplt.figure(figsize=(8, 5))\nplt.plot(range(1, len(cum_var) + 1), cum_var, marker='o', linewidth=2)\nplt.axhline(y=0.90, color='r', linestyle='--', label='90% Threshold')\nplt.axhline(y=0.99, color='g', linestyle='--', label='99% Threshold')\nplt.xlabel(\"Number of Principal Components\")\nplt.ylabel(\"Cumulative Explained Variance\")\nplt.title(\"Elbow Plot: Cumulative Explained Variance by Number of PCs\")\nplt.legend()\nplt.grid(True)\nplt.tight_layout()\n\nplt.xlim(1, 50)\n\nplt.show()\n\n\n\n\n\n\n\n\nSince the “elbow” of the curve occurs at around 7 or 6 PCs, this is the value that will be used in analyzing the data",
     "crumbs": [
       "Running K-Means",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Principle Component Analysis</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Principal Component Analysis</span>"
     ]
   },
   {
     "objectID": "Notebooks/PCA.html#run-pca-with-6-components",
     "href": "Notebooks/PCA.html#run-pca-with-6-components",
-    "title": "3  Principle Component Analysis",
+    "title": "3  Principal Component Analysis",
     "section": "3.3 Run PCA with 6 Components",
     "text": "3.3 Run PCA with 6 Components\n\npca6 = PCA(n_components=6)\nX_ = pca6.fit_transform(X_scaled)\n\nSave the dataset to be run in future notebooks:\n\nnp.save(\"scaled-df.npy\", X_)",
     "crumbs": [
       "Running K-Means",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Principle Component Analysis</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Principal Component Analysis</span>"
     ]
   },
   {
