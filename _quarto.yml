@@ -22,9 +22,9 @@ book:
     - part: "Running K-Means"
       chapters:
         - Notebooks/PCA.ipynb
-        - Notebooks/k7.ipynb
-        - Notebooks/k2.ipynb
-        - Notebooks/k3.ipynb
+        - Notebooks/k11.ipynb
+        # - Notebooks/k2.ipynb
+        # - Notebooks/k3.ipynb
 
     # - summary.qmd
     #- references.qmd
