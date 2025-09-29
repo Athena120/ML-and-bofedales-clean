@@ -1,4 +1,18 @@
-# References {.unnumbered}
+---
+title: "References"
+format:
+    html:
+      toc: false
+bibliography:
+    - refs/papers.bib
+    - refs/datasets.bib
+    - refs/software.bib
+csl: refs/apa.csl
+nocite: |
+    @*
+number-sections: false
+---
+
 
 ::: {#refs}
 :::

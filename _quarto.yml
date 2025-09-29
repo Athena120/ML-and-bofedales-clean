@@ -1,10 +1,8 @@
 project:
   type: book
 execute:
-#  python: "/Users/estellanewton/.local/pipx/venvs/notebook/bin/python"
   enabled: false
   freeze: false
-#  freeze: auto
 format:
   html:
     self-contained: true
@@ -15,17 +13,11 @@ book:
 
   chapters:
     - index.qmd
-    # - intro.qmd
+    - intro.qmd
     - research-qs.qmd
     - datasets.qmd
 
-    - part: "Running K-Means"
-      chapters:
-        - Notebooks/PCA.ipynb
-        - Notebooks/k11.ipynb
-        # - Notebooks/k2.ipynb
-        # - Notebooks/k3.ipynb
-
-    # - summary.qmd
-    #- references.qmd
-    
+    - Notebooks/PCA.ipynb
+    - Notebooks/k11.ipynb
+    #- summary.qmd
+    - references.qmd

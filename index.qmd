@@ -1,10 +1,8 @@
-# Introduction {.unnumbered}
+# Abstract {.unnumbered}
 
-## What are bofedales?
-Bofedales are unique high-Andean wetland ecosystems characterized by peat formation. Located over 3,000m above sea level, they originate due to permanent water flows that foster the development of cushion plants. Cushion-forming Juncaceae are "nurse plants" for plants consumed by wild and domesticated camelids. Bofedales are essential for water management, have high cultural value for indigenous communities (especially herders and farmers), and play a key role in the global climate systems. They can be found in Peru, Bolivia, and northern Chile, the region focused on by this study. 
+Bofedales, high-Andean peatlands located over 3,000m above sea level and formed from permanent water flow, are unique wetlands essential for water management, have a high cultural value for indigenous Aymara communities, and play a critical role in the global carbon system. While supervised machine learning algorithms have previously been used to analyze bofedales, unsupervised algorithms such as the k-means clustering algorithm have yet to be applied to the bofedales of Northern Chile. K-means finds distinctive groups of data points with similar values (called clusters) that naturally occur in the data. We applied a k-means algorithm to datasets consisting of 19 variables relating to a bofedal’s overall condition to determine whether the algorithm could reveal insights about a bofedal’s health. The variables ranged from climate factors such as precipitation and temperature to socioeconomic factors including mining sites and presence of nearby wells. Before running the algorithm, we ran Principle Component Analysis on the data, capturing 91.95% of the initial variance. We found k-means divides the bofedales of Northern Chile into eleven well-separated clusters, each with distinctive characteristics. We concluded that k-means is an effective algorithm to discover insights relating to bofedales’ health and the clusters it generates may be used to identify long-term trends in the health of these ecosystems. 
 
-## What is a k-means clustering algorithm?
-K-means clustering is a type of unsupervised machine learning model. If all of the n features of the dataset were graphed in a n-dimensional space, k-means attempts to create a set of centers and minimize the sum of squared distances between any point and its center. Since this problem is NP-hard, k-means is a heuristic algorithm that converges as a local optimum. 
+
 
 ---
 
