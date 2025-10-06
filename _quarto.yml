@@ -17,8 +17,7 @@ bibliography:
   - refs/software.bib
 csl: refs/apa.csl
 metadata:
-  nocite: |
-    @*
+  suppress-bibliography: true
 # -----------------------------------------------------------
 
 book:
@@ -33,3 +32,4 @@ book:
     - Notebooks/PCA.ipynb
     - Notebooks/k11.ipynb
     - references.qmd
+    

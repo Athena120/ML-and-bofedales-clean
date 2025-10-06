@@ -4,4 +4,8 @@ format:
   html:
     toc: false
 number-sections: false
+suppress-bibliography: false
+
+nocite: |
+  @*
 ---
