@@ -1,24 +1,35 @@
 project:
   type: book
   output-dir: docs
+
 execute:
   enabled: false
   freeze: false
+
 format:
   html:
-    self-contained: true
+    self-contained: false
+
+# --- Global citations config (applies to the whole book) ---
+bibliography:
+  - refs/papers.bib
+  - refs/datasets.bib
+  - refs/software.bib
+csl: refs/apa.csl
+metadata:
+  nocite: |
+    @*
+# -----------------------------------------------------------
+
 book:
   title: "K-Means Clustering & Bofedales"
   author: "Estella Newton"
   date: "2025-07-10"
-
   chapters:
     - index.qmd
     - intro.qmd
     - research-qs.qmd
     - datasets.qmd
-
     - Notebooks/PCA.ipynb
     - Notebooks/k11.ipynb
-    #- summary.qmd
     - references.qmd
