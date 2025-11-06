@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Datasets &amp; Variables – K-Means Clustering &amp; Bofedales</title>
+<title>7&nbsp; Discussion – K-Means Clustering &amp; Bofedales</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Notebooks/PCA.html" rel="next">
-<link href="./research-qs.html" rel="prev">
+<link href="./conclusion.html" rel="next">
+<link href="./results.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./datasets.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./discussion.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./datasets.html" class="sidebar-item-text sidebar-link active">
+  <a href="./datasets.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></span></a>
   </div>
 </li>
@@ -154,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./discussion.html" class="sidebar-item-text sidebar-link">
+  <a href="./discussion.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
   </div>
 </li>
@@ -175,29 +175,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#the-camels-cl-dataset" id="toc-the-camels-cl-dataset" class="nav-link active" data-scroll-target="#the-camels-cl-dataset"><span class="header-section-number">3.1</span> The CAMELS-CL dataset</a></li>
-  <li><a href="#extracted-from-sentinel-2-satellite-imagery-from-gee" id="toc-extracted-from-sentinel-2-satellite-imagery-from-gee" class="nav-link" data-scroll-target="#extracted-from-sentinel-2-satellite-imagery-from-gee"><span class="header-section-number">3.2</span> Extracted from Sentinel-2 Satellite Imagery from GEE</a></li>
-  <li><a href="#opentopographys-api-service" id="toc-opentopographys-api-service" class="nav-link" data-scroll-target="#opentopographys-api-service"><span class="header-section-number">3.3</span> OpenTopography’s API service</a></li>
-  <li><a href="#dga-datasets" id="toc-dga-datasets" class="nav-link" data-scroll-target="#dga-datasets"><span class="header-section-number">3.4</span> DGA datasets</a></li>
-  <li><a href="#development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature" id="toc-development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature" class="nav-link" data-scroll-target="#development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature"><span class="header-section-number">3.5</span> “Development of Groundwater Levels Dataset for Chile since 1970” (publication in Nature)</a></li>
-  <li><a href="#mapbiomas" id="toc-mapbiomas" class="nav-link" data-scroll-target="#mapbiomas"><span class="header-section-number">3.6</span> MapBiomas</a></li>
-  <li><a href="#dirección-general-de-aguas" id="toc-dirección-general-de-aguas" class="nav-link" data-scroll-target="#dirección-general-de-aguas"><span class="header-section-number">3.7</span> Dirección General de Aguas</a></li>
-  <li><a href="#a-multiscale-productivity-assessment-of-high-andean-peatlands-across-the-chilean-altiplano-using-31-years-of-landsat-imagery" id="toc-a-multiscale-productivity-assessment-of-high-andean-peatlands-across-the-chilean-altiplano-using-31-years-of-landsat-imagery" class="nav-link" data-scroll-target="#a-multiscale-productivity-assessment-of-high-andean-peatlands-across-the-chilean-altiplano-using-31-years-of-landsat-imagery"><span class="header-section-number">3.8</span> “A Multiscale Productivity Assessment of High Andean Peatlands across the Chilean Altiplano Using 31 Years of Landsat Imagery”</a></li>
-  <li><a href="#variables-not-included" id="toc-variables-not-included" class="nav-link" data-scroll-target="#variables-not-included"><span class="header-section-number">3.9</span> Variables not included</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Datasets &amp; Variables</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></h1>
 </div>
 
 
@@ -214,87 +200,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-camels-cl-dataset" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="the-camels-cl-dataset"><span class="header-section-number">3.1</span> The CAMELS-CL dataset</h2>
+<p>The graphs demonstrate that the eleven clusters each have distinct characteristics, highlight outlier clusters, and indicate correlations and patterns within and between clusters. The following is a summary of the main qualities of each cluster:</p>
 <ul>
-<li>Minimum Temperature</li>
-<li>Maximum Temperature</li>
-<li>Precipitation</li>
-<li>Ground Water Rights</li>
-<li>Surface Water Rights</li>
-<li>PET</li>
+<li>Cluster 0: Accounts for the majority of bofedales in the sample. Altiplánico bofedales with a wet and cool climate, past mining activity, but currently lots of protected land.</li>
+<li>Cluster 1: Hottest and dry climate, but still high NDVI values. Located lower in the precordillera.</li>
+<li>Cluster 2: Average temperatures and precipitation, highest NDVI values in 2024.</li>
+<li>Cluster 3: Refers to the southern bofedales in the Antofagasta Desert. Drier and warmer climate.</li>
+<li>Cluster 4: Altiplánico bofedales with a cool and very wet climate, likely due to its high altitude. Largest bofedal surface areas.</li>
+<li>Cluster 5: Precordillera bofedales, with average temperatures and moisture and high NDVI values.</li>
+<li>Cluster 6: Usually at lower elevations with warmer temperatures and little precipitation. Low NDVI and NDWI values.</li>
+<li>Cluster 7: A small, outlier cluster indicating unhealthy bofedales. High groundwater extraction and a naturally drier climate led to a smaller surface area and lowest NDVI values. This cluster may refer to vegas, dried bofedales.</li>
+<li>Cluster 8: High NDVI values, with average temperature. Above average mining activity in 1932, but less since.</li>
+<li>Cluster 9: Smaller temperature variation, with high NDVI and NDWI values. Lots of past mining activity, but high percentage of protected land.</li>
+<li>Cluster 10: The northernmost cluster with high NDWI but low PET, and average temperatures.</li>
 </ul>
-<p>These datasets have temporal data, beginning around 1980 and ending around 2020 (depending on the dataset)</p>
-<p>Link to the CAMELS-CL dataset: <a href="URL">https://doi.pangaea.de/10.1594/PANGAEA.894885</a></p>
-<p><em>Note: The CAMELS-CL dataset does include streamflow data and average temperature data, but due to large amounts of missing data, it was not incorporated into the model</em></p>
-</section>
-<section id="extracted-from-sentinel-2-satellite-imagery-from-gee" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="extracted-from-sentinel-2-satellite-imagery-from-gee"><span class="header-section-number">3.2</span> Extracted from Sentinel-2 Satellite Imagery from GEE</h2>
-<ul>
-<li>NDVI</li>
-<li>NDWI</li>
-</ul>
-<p>Link to the Sentinel-2 dataset: <a href="URL">https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2</a></p>
-<p>These datasets have temporal data from 2019 to 2024</p>
-</section>
-<section id="opentopographys-api-service" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="opentopographys-api-service"><span class="header-section-number">3.3</span> OpenTopography’s API service</h2>
-<ul>
-<li>Elevation</li>
-<li>Elevation standard deviation</li>
-</ul>
-<p>Link to OpenTopography’s website: <a href="URL">https://opentopography.org/</a></p>
-</section>
-<section id="dga-datasets" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="dga-datasets"><span class="header-section-number">3.4</span> DGA datasets</h2>
-<ul>
-<li>Number of reservoirs</li>
-</ul>
-<p>Link to download: <a href="URL">https://dga.mop.gob.cl/uploads/sites/13/2024/07/Embalses-1.zip</a></p>
-</section>
-<section id="development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="development-of-groundwater-levels-dataset-for-chile-since-1970-publication-in-nature"><span class="header-section-number">3.5</span> “Development of Groundwater Levels Dataset for Chile since 1970” (publication in Nature)</h2>
-<ul>
-<li>Number of boreholes/wells</li>
-</ul>
-<p>Link to the publication: <a href="URL">https://www.nature.com/articles/s41597-023-02895-5</a></p>
-</section>
-<section id="mapbiomas" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="mapbiomas"><span class="header-section-number">3.6</span> MapBiomas</h2>
-<ul>
-<li>Protected/park land data (m^2 and percentage of whole)</li>
-</ul>
-<p>Link to MapBiomas: <a href="URL">https://chile.mapbiomas.org/en/mapas-de-la-coleccion/</a></p>
-</section>
-<section id="dirección-general-de-aguas" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="dirección-general-de-aguas"><span class="header-section-number">3.7</span> Dirección General de Aguas</h2>
-<ul>
-<li>Mining exploration and extraction data (for 1932 and 1983)</li>
-</ul>
-<p>Link to DGA website: <a href="URL">https://dga.mop.gob.cl/</a></p>
-</section>
-<section id="a-multiscale-productivity-assessment-of-high-andean-peatlands-across-the-chilean-altiplano-using-31-years-of-landsat-imagery" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="a-multiscale-productivity-assessment-of-high-andean-peatlands-across-the-chilean-altiplano-using-31-years-of-landsat-imagery"><span class="header-section-number">3.8</span> “A Multiscale Productivity Assessment of High Andean Peatlands across the Chilean Altiplano Using 31 Years of Landsat Imagery”</h2>
-<ul>
-<li>Area of bofedal</li>
-<li>Area of basin</li>
-<li>Longitude</li>
-<li>Latitude</li>
-</ul>
-<p>Link to publication: <a href="DOI">https://www.researchgate.net/publication/337876398_A_Multiscale_Productivity_Assessment_of_High_Andean_Peatlands_across_the_Chilean_Altiplano_Using_31_Years_of_Landsat_Imagery</a></p>
-</section>
-<section id="variables-not-included" class="level2" data-number="3.9">
-<h2 data-number="3.9" class="anchored" data-anchor-id="variables-not-included"><span class="header-section-number">3.9</span> Variables not included</h2>
-<p>Several variables that are important for consideration when examining factors that determine overall health of a bofedal but do not have readily avalible datasets include:</p>
-<ul>
-<li>Bofedal management strategies</li>
-<li>Population dynamics in herding communities</li>
-<li>Carrying capacity of ganandos by species</li>
-</ul>
-<p>Socioeconomic variables such as these are addressed later in the study through case studies and field work.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -699,13 +620,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./research-qs.html" class="pagination-link" aria-label="Research Questions &amp; Objectives">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span>
+      <a href="./results.html" class="pagination-link" aria-label="Results &amp; Analysis">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Results &amp; Analysis</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Notebooks/PCA.html" class="pagination-link" aria-label="Principal Component Analysis">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principal Component Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./conclusion.html" class="pagination-link" aria-label="Conclusion">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
