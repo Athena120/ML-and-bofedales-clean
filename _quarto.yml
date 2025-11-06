@@ -31,5 +31,8 @@ book:
     - datasets.qmd
     - Notebooks/PCA.ipynb
     - Notebooks/k11.ipynb
+    - results.qmd
+    - discussion.qmd
+    - conclusion.qmd
     - references.qmd
     

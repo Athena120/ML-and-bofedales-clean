@@ -1,0 +1,15 @@
+# Discussion
+
+The graphs demonstrate that the eleven clusters each have distinct characteristics, highlight outlier clusters, and indicate correlations and patterns within and between clusters. The following is a summary of the main qualities of each cluster:
+
+- Cluster 0: Accounts for the majority of bofedales in the sample. Altiplánico bofedales with a wet and cool climate, past mining activity, but currently lots of protected land.
+- Cluster 1: Hottest and dry climate, but still high NDVI values. Located lower in the precordillera.
+- Cluster 2: Average temperatures and precipitation, highest NDVI values in 2024.
+- Cluster 3: Refers to the southern bofedales in the Antofagasta Desert. Drier and warmer climate.
+- Cluster 4: Altiplánico bofedales with a cool and very wet climate, likely due to its high altitude. Largest bofedal surface areas.
+- Cluster 5: Precordillera bofedales, with average temperatures and moisture and high NDVI values.
+- Cluster 6: Usually at lower elevations with warmer temperatures and little precipitation. Low NDVI and NDWI values.
+- Cluster 7: A small, outlier cluster indicating unhealthy bofedales. High groundwater extraction and a naturally drier climate led to a smaller surface area and lowest NDVI values. This cluster may refer to vegas, dried bofedales.
+- Cluster 8: High NDVI values, with average temperature. Above average mining activity in 1932, but less since.
+- Cluster 9: Smaller temperature variation, with high NDVI and NDWI values. Lots of past mining activity, but high percentage of protected land.
+- Cluster 10: The northernmost cluster with high NDWI but low PET, and average temperatures.

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Introduction – K-Means Clustering &amp; Bofedales</title>
+<title>7&nbsp; Discussion – K-Means Clustering &amp; Bofedales</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./research-qs.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./conclusion.html" rel="next">
+<link href="./results.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./discussion.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./discussion.html" class="sidebar-item-text sidebar-link">
+  <a href="./discussion.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
   </div>
 </li>
@@ -172,22 +172,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#what-are-bofedales" id="toc-what-are-bofedales" class="nav-link active" data-scroll-target="#what-are-bofedales"><span class="header-section-number">1.1</span> What are bofedales?</a></li>
-  <li><a href="#what-is-a-k-means-clustering-algorithm" id="toc-what-is-a-k-means-clustering-algorithm" class="nav-link" data-scroll-target="#what-is-a-k-means-clustering-algorithm"><span class="header-section-number">1.2</span> What is a k-means clustering algorithm?</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Discussion</span></h1>
 </div>
 
 
@@ -204,16 +197,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-are-bofedales" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="what-are-bofedales"><span class="header-section-number">1.1</span> What are bofedales?</h2>
-<p>Bofedales are unique high-Andean wetland ecosystems characterized by peat formation. Located over 3,000m above sea level, they originate due to permanent water flows that foster the development of cushion plants. Cushion-forming Juncaceae are “nurse plants” for plants consumed by wild and domesticated camelids. Bofedales are essential for water management, have high cultural value for indigenous communities (especially herders and farmers), and play a key role in the global climate systems. They can be found in Peru, Bolivia, and northern Chile, the region focused on by this study.</p>
-</section>
-<section id="what-is-a-k-means-clustering-algorithm" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="what-is-a-k-means-clustering-algorithm"><span class="header-section-number">1.2</span> What is a k-means clustering algorithm?</h2>
-<p>K-means clustering is a type of unsupervised machine learning model. If all of the n features of the dataset were graphed in a n-dimensional space, k-means attempts to create a set of centers and minimize the sum of squared distances between any point and its center. Since this problem is NP-hard, k-means is a heuristic algorithm that converges as a local optimum.</p>
+<p>The graphs demonstrate that the eleven clusters each have distinct characteristics, highlight outlier clusters, and indicate correlations and patterns within and between clusters. The following is a summary of the main qualities of each cluster:</p>
+<ul>
+<li>Cluster 0: Accounts for the majority of bofedales in the sample. Altiplánico bofedales with a wet and cool climate, past mining activity, but currently lots of protected land.</li>
+<li>Cluster 1: Hottest and dry climate, but still high NDVI values. Located lower in the precordillera.</li>
+<li>Cluster 2: Average temperatures and precipitation, highest NDVI values in 2024.</li>
+<li>Cluster 3: Refers to the southern bofedales in the Antofagasta Desert. Drier and warmer climate.</li>
+<li>Cluster 4: Altiplánico bofedales with a cool and very wet climate, likely due to its high altitude. Largest bofedal surface areas.</li>
+<li>Cluster 5: Precordillera bofedales, with average temperatures and moisture and high NDVI values.</li>
+<li>Cluster 6: Usually at lower elevations with warmer temperatures and little precipitation. Low NDVI and NDWI values.</li>
+<li>Cluster 7: A small, outlier cluster indicating unhealthy bofedales. High groundwater extraction and a naturally drier climate led to a smaller surface area and lowest NDVI values. This cluster may refer to vegas, dried bofedales.</li>
+<li>Cluster 8: High NDVI values, with average temperature. Above average mining activity in 1932, but less since.</li>
+<li>Cluster 9: Smaller temperature variation, with high NDVI and NDWI values. Lots of past mining activity, but high percentage of protected land.</li>
+<li>Cluster 10: The northernmost cluster with high NDWI but low PET, and average temperatures.</li>
+</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -617,13 +616,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Abstract">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Abstract</span>
+      <a href="./results.html" class="pagination-link" aria-label="Results &amp; Analysis">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Results &amp; Analysis</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./research-qs.html" class="pagination-link" aria-label="Research Questions &amp; Objectives">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Research Questions &amp; Objectives</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./conclusion.html" class="pagination-link" aria-label="Conclusion">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

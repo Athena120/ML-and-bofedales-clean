@@ -1,0 +1,8 @@
+# Conclusion
+
+K-means clustering can effectively separate northern Chilean bofedales into meaningful groups with distinctive characteristics that can inform on the ecosystems’ health.
+
+- With our data, various metrics indicated k=11, which yields well-separated clusters
+- Clusters indicate unhealthy/outlier bofedales (such as cluster 7)
+- The algorithm was able to incorporate a diverse array of environmental factors
+- Factors such as protected land or mining sites can inform policy decisions relating to water management or conservation

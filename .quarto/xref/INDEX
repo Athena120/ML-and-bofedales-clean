@@ -34,5 +34,14 @@
   },
   "Notebooks/k11.ipynb": {
     "k11.html": "8ef104d7"
+  },
+  "results.qmd": {
+    "results.html": "b17a4e87"
+  },
+  "discussion.qmd": {
+    "discussion.html": "58e71827"
+  },
+  "conclusion.qmd": {
+    "conclusion.html": "70ab4fd5"
   }
 }
